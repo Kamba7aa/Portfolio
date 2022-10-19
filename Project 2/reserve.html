@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+   <div class="container-3">
+    <header>
+        <h1>Резервирайте маса</h1>
+        <h3>Моля попълнете формата по-долу възможно наи-точно, за да може да получите най-добро обслужване.</h3>
+    </header>
+    <div class="divider-horizontal"></div>
+    <form>
+        <div class="forma info-1">
+            <label for="name">Имена</label>
+            <input class="name" type="text" placeholder="Първо име">
+            <input class="name" type="text" placeholder="Фамилия">
+        </div>
+        <div class="forma info-2">
+            <label for="E-mail">Имейл</label>
+            <input type="email" name="E-mail" placeholder="пример: име@abv.bg">
+        </div>
+        <div class="forma info-3">
+            <label for="nomer">Тел. номер</label>
+            <input type="number" name="nomer" id="nomer">
+        </div>
+        <div class="forma info-4">
+            <label for="gosti">Брой гости</label>
+            <input type="number" name="gosti" min="1" max="20" id="gosti">
+        </div>
+        <div class="forma info-5">
+            <label for="data">Дата и час</label>
+            <input type="date" name="data" id="data"> 
+            <input type="time" name="data" id="data" min="9:00" max="22:00">
+        </div>
+        <div class="forma info-6">
+            <label for="vajno">Другo инфо</label>
+            <textarea name="vajno" id="vajno]" cols="30" rows="5" placeholder="Въведете тук"></textarea>
+        </div>
+        <div class=" forma info-7">
+            <button type="submit">Резервирай</button>
+        </div>
+    </form>
+   </div>
+</body>
+</html>
