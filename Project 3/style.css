@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#intro::first-letter {
+    font-size: 2rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+h1 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3rem;
+}
+.sidebar ul{    
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar .hero {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+main {
+    width: 83%;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+.sidebar {
+    width: 17%;
+    position: relative;
+}
+.sidebar button {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 5.8rem;
+    cursor: pointer;
+}
+.sidebar input {
+    height: 1.5rem;
+    width: 180px;
+    padding-left: 1.5rem;
+}
+.sidebar li {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.sidebar a {
+    border-bottom: 3px solid black;
+}
+.footer button {
+    width: 200px;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 85rem;
+}
+.footer button:hover {
+    background-color: lightblue;
+    border: 1px solid black;
+    
+}
