@@ -24,12 +24,14 @@ nav {
   justify-content: flex-end;
 }
 .header-list {
-  top: 0.2rem;
+  top: 1px;
   display: flex;
   position: fixed;
-  width: 70%;
+  width: 50%;
   align-items: center;
   justify-content: space-around;
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .header-list a {
   text-decoration: none;
@@ -144,11 +146,14 @@ p {
   justify-content: center;
   align-items: center;
   column-gap: 10rem;
-  padding: 5rem 0
+  padding: 5rem 0;
 }
 .footer h1 {
   width: auto;
   font-size: 5rem;
+}
+iframe {
+  margin-top: 2rem;
 }
 /* Container 2 */
 .container-2 {
@@ -163,6 +168,7 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .container-2 .cards {
   display: flex;
@@ -213,16 +219,17 @@ p {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-      display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .container-3 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
 }
 .container-3 h1 {
     width: auto;
@@ -305,4 +312,79 @@ textarea:focus {
 }
 .info-7 button:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+/* Media Queries */
+@media screen and (max-width: 640px) { 
+    .container {
+      width: 100%;
+      height: 125vh;
+    }
+    .main  {
+      width: 77%;
+      text-align: center;
+      height: 115vh;
+    }
+    #nachalo {
+      margin-left: 4rem;
+    }
+    .reserve {
+      width: auto;
+    }
+    .menu h1 {
+      margin-top: 5rem;
+    }
+    .menu {
+      height: auto;
+    }
+    .menu .cards-pica, .cards-pasta, .cards-salati {
+      flex-direction: column;
+      row-gap: 10rem;
+    }
+    .menu .card {
+      width: 300px;
+      height: 550px;
+    }
+    .footer {
+      flex-direction: column;
+    }
+    .footer h1 {
+      font-size: 3.5rem;
+    }
+    .container-3 form {
+      width: 640px;
+    }
+    .forma input {
+      width: 160px;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px){
+  .container {
+    width: 100%;
+  }
+  .main  {
+    width: 80%;
+    text-align: center;
+    height: 80vh;
+  }
+  .reserve {
+    width: auto;
+  }
+  .menu h1 {
+    margin-top: 5rem;
+  }
+  .menu {
+    height: auto;
+  }
+  .menu .cards-pica, .cards-pasta, .cards-salati {
+    row-gap: 10rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menu .card {
+    width: 300px;
+    height: 550px;
+  }
+  .footer {
+    flex-direction: column;
+  }
 }
