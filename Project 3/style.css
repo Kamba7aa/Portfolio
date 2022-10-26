@@ -29,14 +29,6 @@ a {
     color: #000;
     font-size: 1.3rem;
 }
-.sidebar ul{    
-    list-style-type: none;
-    padding: 0;
-}
-.sidebar .hero {
-    list-style-type: disc;
-    padding-left: 2rem;
-}
 main {
     width: 83%;
     margin-right: 2rem;
@@ -46,6 +38,15 @@ main {
 h2 {
     font-size: 2rem;
 }
+.sidebar ul{    
+    list-style-type: none;
+    padding: 0;
+    letter-spacing: 1.5px;
+}
+.sidebar .hero {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
 .sidebar {
     width: 17%;
     position: relative;
@@ -54,8 +55,38 @@ h2 {
     background-color: transparent;
     border: 0;
     position: absolute;
-    top: 5.8rem;
+    top: 5.9rem;
     cursor: pointer;
+}
+.collapsible__header {
+    display: flex;
+    align-items: center;
+}
+.collapsible__header img {
+    width: 35px;
+    cursor: pointer;
+}
+.collapsible__content {
+    max-height: 100vh;
+}
+.collapsible__content i {
+    max-height: 100;
+} 
+.collapsible__heading {
+    width: 80%;
+}
+.sidebar--expanded .collapsible__header img {
+    transform: rotate(88deg);
+    transition: transform 0.3s;
+}
+.sidebar--expanded .collapsible__content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s;
+}
+.sidebar--expanded .collapsible__content i{
+    max-height: 0;
+    overflow: hidden;
 }
 .sidebar input {
     height: 1.5rem;
